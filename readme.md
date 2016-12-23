@@ -72,9 +72,9 @@ class User implements AuthorizableInterface
  * @package Coccoc\Firewalls\Tests\Fixture
  *
  * @ACL\Permission(name="TEST_GRANT")
- * @ACL\Assert(classes={"
-        Redneck1\Firewalls\Tests\Fixture\PositiveAssert",
-        Redneck1\Firewalls\Tests\Fixture\AnotherAssert"
+ * @ACL\Assert(classes={
+        "Redneck1\Firewalls\Tests\Fixture\PositiveAssert",
+        "Redneck1\Firewalls\Tests\Fixture\AnotherAssert"
  * })
  */
 class CheckedClass
