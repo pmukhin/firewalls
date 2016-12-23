@@ -16,7 +16,7 @@ AccessManager can accept two params:
 - Instantiator that implements Doctrine\Instantiator\InstantiatorInterface
 
 ## Example
-```
+```php
 <?php
 
 use Redneck1\Firewalls\AccessManager;
