@@ -1,4 +1,4 @@
-# Coccoc\Firewalls
+# Redneck1\Firewalls
 
 ## About
 Firewalls is a brand new annotation-driven multipurpose ACL written in PHP built on top of php-di library which is used to resolve dependencies for Dynamic Assertions classes.
@@ -19,9 +19,9 @@ AccessManager can accept two params:
 ```
 <?php
 
-use Coccoc\Firewalls\AccessManager;
-use Coccoc\Firewalls\Annotations as ACL;
-use Coccoc\Firewalls\AuthorizableInterface;
+use Redneck1\Firewalls\AccessManager;
+use Redneck1\Firewalls\Annotations as ACL;
+use Redneck1\Firewalls\AuthorizableInterface;
 
 class MyController
 {
@@ -42,7 +42,7 @@ class AwesomeModel
      *
      * @ACL\Accessible()
      * @ACL\Permission(name="PROPERTY_ID")
-     * @ACL\Assert(classes={"Coccoc\Firewalls\Tests\Fixture\NegativeAssert"})
+     * @ACL\Assert(classes={"Redneck1\Firewalls\Tests\Fixture\NegativeAssert"})
      */
     public $id;
 
@@ -51,7 +51,7 @@ class AwesomeModel
      *
      * @ACL\Accessible()
      * @ACL\Permission(name="PROPERTY_TITLE")
-     * @ACL\Assert(classes={"Coccoc\Firewalls\Tests\Fixture\PositiveAssert"})
+     * @ACL\Assert(classes={"Redneck1\Firewalls\Tests\Fixture\PositiveAssert"})
      */
     public $title;
 }
@@ -73,8 +73,8 @@ class User implements AuthorizableInterface
  *
  * @ACL\Permission(name="TEST_GRANT")
  * @ACL\Assert(classes={"
-        Coccoc\Firewalls\Tests\Fixture\PositiveAssert",
-        Coccoc\Firewalls\Tests\Fixture\AnotherAssert"
+        Redneck1\Firewalls\Tests\Fixture\PositiveAssert",
+        Redneck1\Firewalls\Tests\Fixture\AnotherAssert"
  * })
  */
 class CheckedClass
