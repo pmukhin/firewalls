@@ -28,7 +28,7 @@ class MyController
     /**
      * @ACL\Accessible()
      * @ACL\Permission(name="ROLE_GUEST")
-     * @ACL\Assert(classes={"Coccoc\MyProject\MyAssert"})
+     * @ACL\Assert(classes={"Redneck1\MyProject\MyAssert"})
      */
     public function indexAction()
     {
